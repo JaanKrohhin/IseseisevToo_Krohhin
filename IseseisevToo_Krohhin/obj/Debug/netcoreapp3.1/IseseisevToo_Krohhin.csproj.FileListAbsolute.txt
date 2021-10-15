@@ -1,0 +1,13 @@
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.exe
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.deps.json
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.runtimeconfig.json
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.runtimeconfig.dev.json
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.dll
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.pdb
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.csprojAssemblyReference.cache
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.AssemblyInfo.cs
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.dll
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.pdb
+C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.genruntimeconfig.cache
