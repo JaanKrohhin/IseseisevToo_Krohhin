@@ -11,3 +11,17 @@ C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\Isese
 C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.dll
 C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.pdb
 C:\Users\opilane\source\repos\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.genruntimeconfig.cache
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.exe
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.deps.json
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.runtimeconfig.json
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.runtimeconfig.dev.json
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.dll
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\bin\Debug\netcoreapp3.1\IseseisevToo_Krohhin.pdb
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.AssemblyInfoInputs.cache
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.AssemblyInfo.cs
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.csproj.CoreCompileInputs.cache
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.dll
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.pdb
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.genruntimeconfig.cache
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.csproj.AssemblyReference.cache
+C:\Users\Calm\Source\Repos\IseseisevToo_Krohhin\IseseisevToo_Krohhin\obj\Debug\netcoreapp3.1\IseseisevToo_Krohhin.GeneratedMSBuildEditorConfig.editorconfig

@@ -10,13 +10,13 @@ namespace IseseisevToo_Krohhin
         
         public static void ul1()
         {
-            int size = rng.Next(2,8);
-            int help;
+            int size = 1;
             while (size%2!=0)
             {
                 size = rng.Next(2, 8);
             }
-            int[,] srebnum= new int[size+1,size];
+            int[,] srebnum = new int[size,size];
+            int[] help = new int [size];
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
@@ -26,33 +26,42 @@ namespace IseseisevToo_Krohhin
                 }
                 Console.WriteLine("");
             }
+            Console.WriteLine("Muudatud ------");
+            for (int i = 0; i < size; i += 2)
+            {
+                    if (i + 1 == size)
+                        break;
+
+                    for (int j = 0; j < size; j++)
+                    {
+                        var a = srebnum[i, j];
+                        srebnum[i, j] = srebnum[i + 1, j];
+                        srebnum[i + 1, j] = a;
+                    }
+
+            }
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    help = srebnum[i, j];
-                    srebnum[i, j]=srebnum[i+1,j];
-                    srebnum[i + 1, j] = help;
-                    Console.Write($"{srebnum[i, j]} ");
-
+                    Console.Write($"{ srebnum[i, j]} ");
                 }
                 Console.WriteLine("");
             }
+            Console.WriteLine();
+
         }
-        public static void ul2(string a)
+        public static string ul2(string a)
         {
             string[] sen = a.Split(" ");
             foreach (var item in sen)
             {
                 if (item.ToLower()=="jaan")
                 {
-                    Console.WriteLine("Jaan krjutas seda");
-                }
-                else
-                {
-                    Console.WriteLine("Lausel pole sõnat 'jaan'");
+                    return "Jaan krjutas seda";
                 }
             }
+            return "Sellel lausel pole sõnat 'jaan'";
         }
         public static void ul3()
         {
@@ -113,12 +122,12 @@ namespace IseseisevToo_Krohhin
             
                 if (cin[row, seat] == 1)
                 {
-                    Console.WriteLine("Kohta ei ole tühi");
+                    Console.WriteLine("Kohta on juba ostud");
                 } 
                 else
                 {
                     cin[row, seat] = 1;
-                    Console.WriteLine("Koht ostud");
+                    Console.WriteLine("Äitah ostu eest");
                     truth = true;
                 }
             } while (truth!=true);
@@ -127,6 +136,14 @@ namespace IseseisevToo_Krohhin
             {
                 for (int j = 0; j < 30; j++)
                 {
+                    if (i==row && j==seat)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    }
                     Console.Write($"{cin[i, j]} ");
                 }
                 Console.WriteLine("");
