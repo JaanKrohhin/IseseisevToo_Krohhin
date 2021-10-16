@@ -16,7 +16,7 @@ namespace IseseisevToo_Krohhin
                 size = rng.Next(2, 8);
             }
             int[,] srebnum = new int[size,size];
-            int[] help = new int [size];
+            int help;
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
@@ -34,11 +34,10 @@ namespace IseseisevToo_Krohhin
 
                     for (int j = 0; j < size; j++)
                     {
-                        var a = srebnum[i, j];
+                        help = srebnum[i, j];
                         srebnum[i, j] = srebnum[i + 1, j];
-                        srebnum[i + 1, j] = a;
+                        srebnum[i + 1, j] = help;
                     }
-
             }
             for (int i = 0; i < size; i++)
             {
