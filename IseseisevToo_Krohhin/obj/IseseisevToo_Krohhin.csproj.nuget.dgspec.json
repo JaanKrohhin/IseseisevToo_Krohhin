@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Calm\\Source\\Repos\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {}
+    "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Calm\\Source\\Repos\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Calm\\Source\\Repos\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
         "projectName": "IseseisevToo_Krohhin",
-        "projectPath": "C:\\Users\\Calm\\Source\\Repos\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
-        "packagesPath": "C:\\Users\\Calm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Calm\\Source\\Repos\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin\\obj\\",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
+        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Calm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,7 +31,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,7 +42,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -58,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
         }
       }
     }

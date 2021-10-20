@@ -8,7 +8,7 @@ namespace IseseisevToo_Krohhin
         {
             //Mul oli 7. variant
             //Ü 1. Kahemõõtmelises massiivis korraldage kõrvuti asetsevad jooned paarikaupa, st. 1., 2., 3., 4. jne. Kuva tulemus ekraanil.
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Ülesanne 1 -------");
             SubProg.ul1();
 

@@ -7,7 +7,29 @@ namespace IseseisevToo_Krohhin
     class SubProg
     {
         static Random rng = new Random();
-        
+
+        static void array_to_con(int[,] cin)
+        {
+            for (int i = 0; i < cin.GetLength(0); i++)
+            {
+                Console.Write($"{i+1}. rida ");
+                for (int j = 0; j < cin.GetLength(1); j++)
+                {
+                    Console.Write($"{cin[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+        }
+        static void array_fill(int[,] cin, int a, int b)
+        {
+            for (int i = 0; i < cin.GetLength(0); i++)
+            {
+                for (int j = 0; j < cin.GetLength(1); j++)
+                {
+                    cin[i, j] = rng.Next(a, b);
+                }
+            }
+        }
         public static void ul1()
         {
             int size = 1;
@@ -17,15 +39,8 @@ namespace IseseisevToo_Krohhin
             }
             int[,] srebnum = new int[size,size];
             int help;
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = 0; j < size; j++)
-                {
-                    srebnum[i, j] = rng.Next(1,50);
-                    Console.Write($"{ srebnum[i, j]} ");
-                }
-                Console.WriteLine("");
-            }
+            array_fill(srebnum,1,50);            
+            array_to_con(srebnum);
             Console.WriteLine("Muudatud ------");
             for (int i = 0; i < size; i += 2)
             {
@@ -39,16 +54,7 @@ namespace IseseisevToo_Krohhin
                         srebnum[i + 1, j] = help;
                     }
             }
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = 0; j < size; j++)
-                {
-                    Console.Write($"{ srebnum[i, j]} ");
-                }
-                Console.WriteLine("");
-            }
-            Console.WriteLine();
-
+            array_to_con(srebnum);
         }
         public static string ul2(string a)
         {
@@ -64,90 +70,100 @@ namespace IseseisevToo_Krohhin
         }
         public static void ul3()
         {
-            int[,] cin = new int[10,30];
+            int row = 0;
             bool truth = false;
-            int row=0;
             int seat = 0;
-
-            for (int i = 0; i < 10; i++)
-            {
-                for (int j = 0; j < 30; j++)
-                {
-                    cin[i, j] = rng.Next(0, 2);
-                    Console.Write($"{cin[i,j]} ");
-                }
-                Console.WriteLine("");
-            }
             do
             {
-                while (truth!=true)
+                Console.WriteLine("Vali oma saali: 1 - väike, 2 - keskmine, 3 - suur");
+                try
                 {
-                    Console.WriteLine("Mis rida sa tahad 1-10");
-                    try
+                    row = int.Parse(Console.ReadLine());
+                    if (row == 1)
                     {
-                        row = int.Parse(Console.ReadLine()) - 1;
-                        if (row<10 && row>-1)
-                        {
-                            truth = true;
-                        }
-
+                        row = 5;
+                        seat = 15;
+                        truth = !truth;
                     }
-                    catch (Exception)
+                    else if (row == 2)
                     {
-
-                        Console.WriteLine("Kirjuta numbrit");
+                        row = 10;
+                        seat = 20;
+                        truth = !truth;
+                    }
+                    else if (row == 3)
+                    {
+                        row = 15;
+                        seat = 25;
+                        truth = !truth;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Kirjuta õiget numbrit");
                     }
                 }
-                truth = false;
-                while (truth != true)
+                catch (Exception)
                 {
-                    Console.WriteLine("Mis kohta sa tahad? 1-30");
-                    try
-                    {
-                        seat = int.Parse(Console.ReadLine()) - 1;
-                        if (seat < 30 && seat > -1)
-                        {
-                            truth = true;
-                        }
-
-                    }
-                    catch (Exception)
-                    {
-
-                        Console.WriteLine("Kirjuta numbrit");
-                    }
+                    Console.WriteLine("Kirjuta numbrit");
                 }
-                truth = false;
-            
+            } while (!truth);
+            int[,] cin = new int[row, seat];
+            array_fill(cin, 0, 2);
+            array_to_con(cin);
+            do
+            {
+                row = check(row, row, "Mis rida sa tahad? 1-" + row.ToString());
+                seat = check(seat, seat, "Mis kohta sa tahad? 1-" + seat.ToString());
                 if (cin[row, seat] == 1)
                 {
                     Console.WriteLine("Kohta on juba ostud");
-                } 
+                }
                 else
                 {
                     cin[row, seat] = 1;
                     Console.WriteLine("Äitah ostu eest");
                     truth = true;
                 }
-            } while (truth!=true);
-            Console.ForegroundColor = ConsoleColor.Red;
-            for (int i = 0; i < 10; i++)
+            }
+            while (!true);
+            for (int i = 0; i < cin.GetLength(0); i++)
             {
-                for (int j = 0; j < 30; j++)
+                for (int j = 0; j < cin.GetLength(1); j++)
                 {
-                    if (i==row && j==seat)
+                    if (i == row && j == seat)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                     }
                     else
                     {
-                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.ForegroundColor = ConsoleColor.Green;
                     }
                     Console.Write($"{cin[i, j]} ");
                 }
-                Console.WriteLine("");
+                Console.WriteLine();
             }
 
-        }
+            
+            static int check(int a, int rangi, string senten)
+            {
+                while (true)
+                {
+                    Console.WriteLine(senten);
+                    try
+                    {
+                        a = int.Parse(Console.ReadLine()) - 1;
+                        if (a < rangi && a > rangi - rangi - 1)
+                        {
+                            return a;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("Kirjuta numbrit");
+                    }
+                }
+            }
+        }       
+
     }
 }
