@@ -10,6 +10,19 @@ namespace IseseisevToo_Krohhin
 
         static void array_to_con(int[,] cin)
         {
+            Console.Write("        ");
+            for (int i = 0; i < cin.GetLength(1); i++)
+            {
+                if (i.ToString().Length==2)
+                {
+                    Console.Write($"{i+1} ");
+                }
+                else
+                {
+                    Console.Write($"{i + 1} ");
+                }
+            }
+            Console.WriteLine();
             for (int i = 0; i < cin.GetLength(0); i++)
             {
                 Console.Write($"{i+1}. rida ");
@@ -30,6 +43,7 @@ namespace IseseisevToo_Krohhin
                 }
             }
         }
+
         public static void ul1()
         {
             int size = 1;
@@ -68,11 +82,11 @@ namespace IseseisevToo_Krohhin
             }
             return "Sellel lausel pole sõnat 'jaan'";
         }
+        static int seat = 0;
         public static void ul3()
         {
             int row = 0;
             bool truth = false;
-            int seat = 0;
             do
             {
                 Console.WriteLine("Vali oma saali: 1 - väike, 2 - keskmine, 3 - suur");
@@ -113,7 +127,7 @@ namespace IseseisevToo_Krohhin
             do
             {
                 row = check(row, row, "Mis rida sa tahad? 1-" + row.ToString());
-                seat = check(seat, seat, "Mis kohta sa tahad? 1-" + seat.ToString());
+                int[] BotSeats = botChoice();
                 if (cin[row, seat] == 1)
                 {
                     Console.WriteLine("Kohta on juba ostud");
@@ -142,8 +156,27 @@ namespace IseseisevToo_Krohhin
                 }
                 Console.WriteLine();
             }
+            static int[] botChoice()
+            {
+                bool help = true;
+                int tickets=check(seat,seat,"Mitu kohta sa tahad");
+                int[] botSeats = { tickets };
+                if (seat / 2 == seat / 2)
+                {
+                    botSeats[0] = seat / 2;
+                }
+                else
+                {
+                    botSeats[0] = (seat / 2) + 1;
+                }
+                if (tickets>1)
+                {
+                }
+                return botSeats;
+            }
+            static void emptyQ() {
 
-            
+            }
             static int check(int a, int rangi, string senten)
             {
                 while (true)

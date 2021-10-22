@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {}
+    "C:\\Users\\opilane\\source\\repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {
+    "C:\\Users\\opilane\\source\\repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
         "projectName": "IseseisevToo_Krohhin",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
+        "projectPath": "C:\\Users\\opilane\\source\\repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\IseseisevToo_Krohhin.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\source\\repos\\IseseisevToo_Krohhin2\\IseseisevToo_Krohhin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
